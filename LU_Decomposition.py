@@ -192,7 +192,10 @@ if __name__ == "__main__":
         print("is deconstructed using the function into L,\n",La)
         print("P, \n",Pa,"\nand U\n",Ua,".")
         
-        print
+        print("The Matrix B,")
+        print(B,",")
+        print("is deconstructed using the function into L,\n",Lb)
+        print("P, \n",Pb,"\nand U\n",Ub,".")
         
     
     
