@@ -174,19 +174,25 @@ def LU_Decomposition(A):
     return [L , P , U]
 
 if __name__ == "__main__":
-    A = np.array([[1,2,3],[4,5,6],[7,8,9]])
-    B = np.array([[0,0,1,2,3],[0,2,4,6,8],[0,4,8,12,16],[0,1,2,3,5]])
+    import sys
     
-    [La , Pa , Ua] = LU_Decomposition(A)
-    [Lb , Pb , Ub] = LU_Decomposition(B)
-    
-    """
-    print("Examples of usage of LU_Decomposition!\n")
-    
-    print("The Matrix A,")
-    print(A,",")
-    print("is deconstructed using the function into L,\n",La)
-    print("P, \n",Pa,"\nand U\n",Ua,".")
-    """
+    if len(sys.argv) >= 2 and sys.argv[1] == "example":
+        
+        A = np.array([[1,2,3],[4,5,6],[7,8,9]])
+        B = np.array([[0,0,1,2,3],[0,2,4,6,8],[0,4,8,12,16],[0,1,2,3,5]])
+        
+        [La , Pa , Ua] = LU_Decomposition(A)
+        [Lb , Pb , Ub] = LU_Decomposition(B)
+        
+        
+        print("Two examples of usage of LU_Decomposition!\n")
+        
+        print("The Matrix A,")
+        print(A,",")
+        print("is deconstructed using the function into L,\n",La)
+        print("P, \n",Pa,"\nand U\n",Ua,".")
+        
+        print
+        
     
     
